@@ -12,4 +12,5 @@
 #   public *;
 #}
 
-# Uncomment this to 
+# Uncomment this to preserve the line number information for
+# debugg
