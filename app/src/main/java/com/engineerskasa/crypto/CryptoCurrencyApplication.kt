@@ -6,4 +6,5 @@ import com.engineerskasa.crypto.di.modules.AppModule
 import com.engineerskasa.crypto.di.modules.NetModule
 import com.engineerskasa.crypto.utils.Constants
 import dagger.android.AndroidInjector
-import dagger.andro
+import dagger.android.DispatchingAndroidInjector
+import dagger.android.H
