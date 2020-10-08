@@ -10,4 +10,4 @@ import dagger.android.DispatchingAndroidInjector
 import dagger.android.HasAndroidInjector
 import javax.inject.Inject
 
-class CryptoCurre
+class CryptoCurrencyApplication(): Application(), HasAndro
