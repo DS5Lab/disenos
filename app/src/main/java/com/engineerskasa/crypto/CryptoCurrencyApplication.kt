@@ -7,4 +7,7 @@ import com.engineerskasa.crypto.di.modules.NetModule
 import com.engineerskasa.crypto.utils.Constants
 import dagger.android.AndroidInjector
 import dagger.android.DispatchingAndroidInjector
-import dagger.android.H
+import dagger.android.HasAndroidInjector
+import javax.inject.Inject
+
+class CryptoCurre
