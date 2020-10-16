@@ -11,4 +11,5 @@ import dagger.android.HasAndroidInjector
 import javax.inject.Inject
 
 class CryptoCurrencyApplication(): Application(), HasAndroidInjector {
-    @Inject lateinit var androidInjec
+    @Inject lateinit var androidInjector: DispatchingAndroidInjector<Any>
+    override fun
