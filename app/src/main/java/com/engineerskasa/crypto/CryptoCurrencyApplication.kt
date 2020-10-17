@@ -12,4 +12,6 @@ import javax.inject.Inject
 
 class CryptoCurrencyApplication(): Application(), HasAndroidInjector {
     @Inject lateinit var androidInjector: DispatchingAndroidInjector<Any>
-    override fun
+    override fun androidInjector(): AndroidInjector<Any> = androidInjector
+
+    override f
