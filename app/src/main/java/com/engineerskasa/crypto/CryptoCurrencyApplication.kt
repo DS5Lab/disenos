@@ -16,4 +16,6 @@ class CryptoCurrencyApplication(): Application(), HasAndroidInjector {
 
     override fun onCreate() {
         super.onCreate()
-        DaggerApp
+        DaggerAppComponent.builder()
+            .appModule(AppModule(this))
+   
