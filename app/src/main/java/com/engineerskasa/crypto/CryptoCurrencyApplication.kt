@@ -14,4 +14,6 @@ class CryptoCurrencyApplication(): Application(), HasAndroidInjector {
     @Inject lateinit var androidInjector: DispatchingAndroidInjector<Any>
     override fun androidInjector(): AndroidInjector<Any> = androidInjector
 
-    override f
+    override fun onCreate() {
+        super.onCreate()
+        DaggerApp
