@@ -18,4 +18,5 @@ class CryptoCurrencyApplication(): Application(), HasAndroidInjector {
         super.onCreate()
         DaggerAppComponent.builder()
             .appModule(AppModule(this))
-   
+            .netModule(NetModule(Constants.BASE_URL))
+    
