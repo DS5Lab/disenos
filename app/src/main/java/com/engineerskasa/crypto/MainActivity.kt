@@ -9,4 +9,5 @@ import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.GridLayoutManager
-import androidx.recyclerview.wid
+import androidx.recyclerview.widget.LinearLayoutManager
+import com.engineerskasa.crypto
