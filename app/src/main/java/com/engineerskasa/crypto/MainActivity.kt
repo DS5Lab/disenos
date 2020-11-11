@@ -14,4 +14,5 @@ import com.engineerskasa.crypto.adapter.CryptoCurrencyAdapter
 import com.engineerskasa.crypto.data.viewmodel.CryptoCurrencyVM
 import com.engineerskasa.crypto.data.viewmodel.CryptoCurrencyVMFactory
 import com.engineerskasa.crypto.databinding.ActivityMainBinding
-import com.engineerskasa.crypto.utils.Constants.Companion
+import com.engineerskasa.crypto.utils.Constants.Companion.LIMIT
+import com.engineerskasa.crypto.utils.Constants.Com
