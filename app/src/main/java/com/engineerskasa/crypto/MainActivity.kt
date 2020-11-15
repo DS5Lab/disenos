@@ -20,3 +20,7 @@ import com.engineerskasa.crypto.utils.Constants.Companion.OFFSET
 import com.engineerskasa.crypto.utils.InfiniteScrollListener
 import dagger.android.AndroidInjection
 import javax.inject.Inject
+
+class MainActivity : AppCompatActivity() {
+    @Inject
+    la
