@@ -23,4 +23,5 @@ import javax.inject.Inject
 
 class MainActivity : AppCompatActivity() {
     @Inject
-    la
+    lateinit var cryptoCurrencyVMFactory: CryptoCurrencyVMFactory
+    lateinit 
