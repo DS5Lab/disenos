@@ -17,4 +17,5 @@ import com.engineerskasa.crypto.databinding.ActivityMainBinding
 import com.engineerskasa.crypto.utils.Constants.Companion.LIMIT
 import com.engineerskasa.crypto.utils.Constants.Companion.LIST_SCROLLING
 import com.engineerskasa.crypto.utils.Constants.Companion.OFFSET
-import com.engineerska
+import com.engineerskasa.crypto.utils.InfiniteScrollListener
+import dagg
