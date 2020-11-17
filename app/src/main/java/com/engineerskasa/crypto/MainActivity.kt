@@ -25,4 +25,5 @@ class MainActivity : AppCompatActivity() {
     @Inject
     lateinit var cryptoCurrencyVMFactory: CryptoCurrencyVMFactory
     lateinit var cryptoCurrencyVM: CryptoCurrencyVM
-    var adapter = Cr
+    var adapter = CryptoCurrencyAdapter(ArrayList())
+    lateinit var bin
