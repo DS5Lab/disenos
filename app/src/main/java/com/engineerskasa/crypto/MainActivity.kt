@@ -26,4 +26,6 @@ class MainActivity : AppCompatActivity() {
     lateinit var cryptoCurrencyVMFactory: CryptoCurrencyVMFactory
     lateinit var cryptoCurrencyVM: CryptoCurrencyVM
     var adapter = CryptoCurrencyAdapter(ArrayList())
-    lateinit var bin
+    lateinit var binding: ActivityMainBinding
+    var currentPage = 0
+    override fun
