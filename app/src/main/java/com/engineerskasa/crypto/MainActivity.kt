@@ -28,4 +28,5 @@ class MainActivity : AppCompatActivity() {
     var adapter = CryptoCurrencyAdapter(ArrayList())
     lateinit var binding: ActivityMainBinding
     var currentPage = 0
-    override fun
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super
