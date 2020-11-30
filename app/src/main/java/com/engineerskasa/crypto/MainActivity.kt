@@ -29,4 +29,5 @@ class MainActivity : AppCompatActivity() {
     lateinit var binding: ActivityMainBinding
     var currentPage = 0
     override fun onCreate(savedInstanceState: Bundle?) {
-        super
+        super.onCreate(savedInstanceState)
+        binding = DataBindi
