@@ -37,4 +37,5 @@ class MainActivity : AppCompatActivity() {
         initializeRecycler()
         cryptoCurrencyVM = ViewModelProvider(this, cryptoCurrencyVMFactory).get(CryptoCurrencyVM::class.java)
 
-       
+        loadData()
+        cryptoCurrencyVM.cryptoCurrencyResults.o
