@@ -38,4 +38,6 @@ class MainActivity : AppCompatActivity() {
         cryptoCurrencyVM = ViewModelProvider(this, cryptoCurrencyVMFactory).get(CryptoCurrencyVM::class.java)
 
         loadData()
-        cryptoCurrencyVM.cryptoCurrencyResults.o
+        cryptoCurrencyVM.cryptoCurrencyResults.observe(this, Observer {
+            if (it != null) {
+    
