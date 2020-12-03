@@ -40,4 +40,5 @@ class MainActivity : AppCompatActivity() {
         loadData()
         cryptoCurrencyVM.cryptoCurrencyResults.observe(this, Observer {
             if (it != null) {
-    
+                Log.e("ZSH", "onCreate: $it" )
+                val position =
