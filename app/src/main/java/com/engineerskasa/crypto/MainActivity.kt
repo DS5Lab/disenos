@@ -30,4 +30,5 @@ class MainActivity : AppCompatActivity() {
     var currentPage = 0
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = DataBindi
+        binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
+  
