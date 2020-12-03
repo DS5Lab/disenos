@@ -35,4 +35,6 @@ class MainActivity : AppCompatActivity() {
         AndroidInjection.inject(this)
 
         initializeRecycler()
-        cryptoCurrencyVM = ViewModelProvider(this, cry
+        cryptoCurrencyVM = ViewModelProvider(this, cryptoCurrencyVMFactory).get(CryptoCurrencyVM::class.java)
+
+       
