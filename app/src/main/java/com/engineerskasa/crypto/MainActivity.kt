@@ -41,4 +41,5 @@ class MainActivity : AppCompatActivity() {
         cryptoCurrencyVM.cryptoCurrencyResults.observe(this, Observer {
             if (it != null) {
                 Log.e("ZSH", "onCreate: $it" )
-                val position =
+                val position = adapter.itemCount
+                adapter.addCrypt
