@@ -42,4 +42,5 @@ class MainActivity : AppCompatActivity() {
             if (it != null) {
                 Log.e("ZSH", "onCreate: $it" )
                 val position = adapter.itemCount
-                adapter.addCrypt
+                adapter.addCryptocurrencies(it)
+                binding.recycler.ad
