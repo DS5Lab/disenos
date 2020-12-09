@@ -48,4 +48,4 @@ class MainActivity : AppCompatActivity() {
             }
         })
 
-        cryptoCu
+        cryptoCurrencyVM.cryptocurrenciesError.observe(this, Observe
