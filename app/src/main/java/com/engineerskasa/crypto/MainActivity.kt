@@ -44,4 +44,8 @@ class MainActivity : AppCompatActivity() {
                 val position = adapter.itemCount
                 adapter.addCryptocurrencies(it)
                 binding.recycler.adapter = adapter
-                binding.recycler.scrollToPosition(posit
+                binding.recycler.scrollToPosition(position - LIST_SCROLLING)
+            }
+        })
+
+        cryptoCu
