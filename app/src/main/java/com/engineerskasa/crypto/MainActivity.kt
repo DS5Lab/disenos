@@ -48,4 +48,6 @@ class MainActivity : AppCompatActivity() {
             }
         })
 
-        cryptoCurrencyVM.cryptocurrenciesError.observe(this, Observe
+        cryptoCurrencyVM.cryptocurrenciesError.observe(this, Observer {
+            if (it != null) {
+                Toast
