@@ -50,4 +50,4 @@ class MainActivity : AppCompatActivity() {
 
         cryptoCurrencyVM.cryptocurrenciesError.observe(this, Observer {
             if (it != null) {
-                Toast
+                Toast.makeText(this, resources.getString(R.string.cryptocurr
