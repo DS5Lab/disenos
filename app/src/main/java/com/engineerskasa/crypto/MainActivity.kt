@@ -55,4 +55,5 @@ class MainActivity : AppCompatActivity() {
             }
         })
 
-        cryptoCurrencyVM.cryptocurrenciesLoader.observe(
+        cryptoCurrencyVM.cryptocurrenciesLoader.observe(this, Observer {
+            if (it == false) bindi
