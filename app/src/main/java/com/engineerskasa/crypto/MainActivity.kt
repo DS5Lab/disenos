@@ -55,4 +55,4 @@ class MainActivity : AppCompatActivity() {
             }
         })
 
-       
+        cryptoCurrencyVM.cryptocurrenciesLoader.observe(
