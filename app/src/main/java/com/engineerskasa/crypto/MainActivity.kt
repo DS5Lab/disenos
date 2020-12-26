@@ -56,4 +56,6 @@ class MainActivity : AppCompatActivity() {
         })
 
         cryptoCurrencyVM.cryptocurrenciesLoader.observe(this, Observer {
-            if (it == false) bindi
+            if (it == false) binding.progressBar.visibility = View.GONE
+        })
+    
