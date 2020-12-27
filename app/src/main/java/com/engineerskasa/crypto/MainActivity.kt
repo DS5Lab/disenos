@@ -62,4 +62,4 @@ class MainActivity : AppCompatActivity() {
 
     private fun initializeRecycler() {
         val gridLayoutManager = GridLayoutManager(this, 1)
-        gridLayo
+        gridLayoutManager.orientation = LinearLayoutManager.
