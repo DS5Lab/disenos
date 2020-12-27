@@ -70,4 +70,5 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-  
+    private fun loadData() {
+        cryptoCurrencyVM.loadCrypt
