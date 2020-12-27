@@ -66,4 +66,8 @@ class MainActivity : AppCompatActivity() {
         binding.recycler.apply {
             setHasFixedSize(true)
             layoutManager = gridLayoutManager
-            addOnScrollListener(InfiniteScrollL
+            addOnScrollListener(InfiniteScrollListener({ loadData() }, gridLayoutManager))
+        }
+    }
+
+  
