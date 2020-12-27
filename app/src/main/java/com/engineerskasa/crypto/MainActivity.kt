@@ -58,4 +58,7 @@ class MainActivity : AppCompatActivity() {
         cryptoCurrencyVM.cryptocurrenciesLoader.observe(this, Observer {
             if (it == false) binding.progressBar.visibility = View.GONE
         })
-    
+    }
+
+    private fun initializeRecycler() {
+        val gridLa
