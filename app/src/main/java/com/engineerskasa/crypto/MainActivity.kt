@@ -65,4 +65,5 @@ class MainActivity : AppCompatActivity() {
         gridLayoutManager.orientation = LinearLayoutManager.VERTICAL
         binding.recycler.apply {
             setHasFixedSize(true)
-            layoutManager = gridLayou
+            layoutManager = gridLayoutManager
+            addOnScrollListener(InfiniteScrollL
