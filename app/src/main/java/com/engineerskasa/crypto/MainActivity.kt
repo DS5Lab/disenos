@@ -64,4 +64,5 @@ class MainActivity : AppCompatActivity() {
         val gridLayoutManager = GridLayoutManager(this, 1)
         gridLayoutManager.orientation = LinearLayoutManager.VERTICAL
         binding.recycler.apply {
-            setHas
+            setHasFixedSize(true)
+            layoutManager = gridLayou
