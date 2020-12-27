@@ -71,4 +71,5 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun loadData() {
-        cryptoCurrencyVM.loadCrypt
+        cryptoCurrencyVM.loadCryptoCurrencies(LIMIT, currentPage * OFFSET)
+        currentPage
