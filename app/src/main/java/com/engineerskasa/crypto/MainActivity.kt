@@ -72,4 +72,8 @@ class MainActivity : AppCompatActivity() {
 
     private fun loadData() {
         cryptoCurrencyVM.loadCryptoCurrencies(LIMIT, currentPage * OFFSET)
-        currentPage
+        currentPage++
+    }
+
+    override fun onDestroy() {
+        supe
