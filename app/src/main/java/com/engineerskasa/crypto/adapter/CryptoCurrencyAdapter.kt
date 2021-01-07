@@ -8,4 +8,5 @@ import androidx.recyclerview.widget.RecyclerView
 import com.engineerskasa.crypto.R
 import com.engineerskasa.crypto.model.CryptoCurrency
 
-class CryptoCurrencyAdapter(cryptocurrencies: List<CryptoCurrency>
+class CryptoCurrencyAdapter(cryptocurrencies: List<CryptoCurrency>):RecyclerView.Adapter<CryptoCurrencyVH>() {
+    private var
