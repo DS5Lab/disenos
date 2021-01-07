@@ -6,4 +6,6 @@ import android.view.ViewGroup
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.engineerskasa.crypto.R
-import com.
+import com.engineerskasa.crypto.model.CryptoCurrency
+
+class Cr
