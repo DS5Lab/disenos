@@ -1,3 +1,4 @@
 package com.engineerskasa.crypto.adapter
 
-import
+import android.view.LayoutInflater
+import android.view.View
