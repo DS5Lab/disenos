@@ -9,4 +9,7 @@ import com.engineerskasa.crypto.R
 import com.engineerskasa.crypto.model.CryptoCurrency
 
 class CryptoCurrencyAdapter(cryptocurrencies: List<CryptoCurrency>):RecyclerView.Adapter<CryptoCurrencyVH>() {
-    private var
+    private var cryptocurrenciesList = ArrayList<CryptoCurrency>()
+
+    init {
+ 
