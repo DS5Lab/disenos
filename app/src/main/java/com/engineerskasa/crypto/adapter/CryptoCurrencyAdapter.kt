@@ -12,4 +12,4 @@ class CryptoCurrencyAdapter(cryptocurrencies: List<CryptoCurrency>):RecyclerView
     private var cryptocurrenciesList = ArrayList<CryptoCurrency>()
 
     init {
- 
+        this.cryptocurrenciesList =  cryptocurrencies as Array
