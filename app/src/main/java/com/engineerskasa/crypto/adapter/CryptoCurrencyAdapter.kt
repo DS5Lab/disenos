@@ -15,4 +15,4 @@ class CryptoCurrencyAdapter(cryptocurrencies: List<CryptoCurrency>):RecyclerView
         this.cryptocurrenciesList =  cryptocurrencies as ArrayList<CryptoCurrency>
     }
 
-    override fun onCreateView
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CryptoCurrency
