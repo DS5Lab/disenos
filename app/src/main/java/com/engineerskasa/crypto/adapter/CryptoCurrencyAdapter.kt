@@ -16,4 +16,6 @@ class CryptoCurrencyAdapter(cryptocurrencies: List<CryptoCurrency>):RecyclerView
     }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): CryptoCurrencyVH {
-        val itemView = LayoutInflater.from(parent.context).inflate(R.layout.cryptocurrency_list_
+        val itemView = LayoutInflater.from(parent.context).inflate(R.layout.cryptocurrency_list_item,
+            parent, false)
+        return Cry
