@@ -21,4 +21,4 @@ class CryptoCurrencyAdapter(cryptocurrencies: List<CryptoCurrency>):RecyclerView
         return CryptoCurrencyVH(itemView)
     }
 
-    override fu
+    override fun onBindViewHolder(holder: CryptoCurrencyVH, positio
