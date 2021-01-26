@@ -25,3 +25,6 @@ class CryptoCurrencyAdapter(cryptocurrencies: List<CryptoCurrency>):RecyclerView
         val cryptocurrencyItem = cryptocurrenciesList[position]
         holder.cryptocurrencyListItem(cryptocurrencyItem)
     }
+
+    override fun getItemCount(): Int {
+        return cryptoc
