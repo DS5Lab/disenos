@@ -37,4 +37,4 @@ class CryptoCurrencyAdapter(cryptocurrencies: List<CryptoCurrency>):RecyclerView
     }
 }
 
-class CryptoCurrenc
+class CryptoCurrencyVH(itemView: View): RecyclerView.ViewH
