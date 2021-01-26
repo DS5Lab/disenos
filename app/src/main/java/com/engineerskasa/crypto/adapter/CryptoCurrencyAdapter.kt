@@ -32,4 +32,5 @@ class CryptoCurrencyAdapter(cryptocurrencies: List<CryptoCurrency>):RecyclerView
 
     fun addCryptocurrencies(cryptocurrencies: List<CryptoCurrency>){
         val initPosition = cryptocurrenciesList.size
-        cryptocurrenciesList.addAll(
+        cryptocurrenciesList.addAll(cryptocurrencies)
+        notifyItemRangeInserted(initP
