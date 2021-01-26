@@ -27,4 +27,7 @@ class CryptoCurrencyAdapter(cryptocurrencies: List<CryptoCurrency>):RecyclerView
     }
 
     override fun getItemCount(): Int {
-        return cryptoc
+        return cryptocurrenciesList.size
+    }
+
+    fun addCryptocurrencies(crypt
