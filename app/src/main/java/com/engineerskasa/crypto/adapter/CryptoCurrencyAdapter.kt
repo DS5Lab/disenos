@@ -30,4 +30,5 @@ class CryptoCurrencyAdapter(cryptocurrencies: List<CryptoCurrency>):RecyclerView
         return cryptocurrenciesList.size
     }
 
-    fun addCryptocurrencies(crypt
+    fun addCryptocurrencies(cryptocurrencies: List<CryptoCurrency>){
+        val initPositi
