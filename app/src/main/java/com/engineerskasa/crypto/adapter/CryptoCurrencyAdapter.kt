@@ -22,4 +22,6 @@ class CryptoCurrencyAdapter(cryptocurrencies: List<CryptoCurrency>):RecyclerView
     }
 
     override fun onBindViewHolder(holder: CryptoCurrencyVH, position: Int) {
-        val cryptocurrencyItem = cryptocurrenciesList[positio
+        val cryptocurrencyItem = cryptocurrenciesList[position]
+        holder.cryptocurrencyListItem(cryptocurrencyItem)
+    }
