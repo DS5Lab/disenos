@@ -37,4 +37,5 @@ class CryptoCurrencyAdapter(cryptocurrencies: List<CryptoCurrency>):RecyclerView
     }
 }
 
-class CryptoCurrencyVH(itemView: View): RecyclerView.ViewH
+class CryptoCurrencyVH(itemView: View): RecyclerView.ViewHolder(itemView) {
+    var cryptocurrencyId = itemVi
