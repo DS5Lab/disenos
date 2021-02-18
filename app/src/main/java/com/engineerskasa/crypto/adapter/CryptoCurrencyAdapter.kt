@@ -38,4 +38,6 @@ class CryptoCurrencyAdapter(cryptocurrencies: List<CryptoCurrency>):RecyclerView
 }
 
 class CryptoCurrencyVH(itemView: View): RecyclerView.ViewHolder(itemView) {
-    var cryptocurrencyId = itemVi
+    var cryptocurrencyId = itemView.findViewById<TextView>(R.id.cryptocurrency_id)
+
+    fun cryp
