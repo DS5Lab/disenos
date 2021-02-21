@@ -42,4 +42,5 @@ class CryptoCurrencyVH(itemView: View): RecyclerView.ViewHolder(itemView) {
 
     fun cryptocurrencyListItem(cryptocurrencyItem: CryptoCurrency) {
         cryptocurrencyId.text = cryptocurrencyItem.id
- 
+    }
+}
