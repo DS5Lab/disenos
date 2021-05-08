@@ -6,4 +6,7 @@ import com.engineerskasa.crypto.data.remote.ApiInterface
 import com.engineerskasa.crypto.model.CryptoCurrency
 import com.engineerskasa.crypto.utils.Constants.Companion.START_ZERO_VALUE
 import com.engineerskasa.crypto.utils.Utils
-import io.reactive
+import io.reactivex.Observable
+import javax.inject.Inject
+
+class Cry
