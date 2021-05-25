@@ -9,4 +9,5 @@ import com.engineerskasa.crypto.utils.Utils
 import io.reactivex.Observable
 import javax.inject.Inject
 
-class Cry
+class CryptoCurrencyRepository @Inject constructor(
+    val a
