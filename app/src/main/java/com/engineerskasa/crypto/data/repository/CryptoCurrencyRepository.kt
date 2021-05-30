@@ -10,4 +10,6 @@ import io.reactivex.Observable
 import javax.inject.Inject
 
 class CryptoCurrencyRepository @Inject constructor(
-    val a
+    val apiInterface: ApiInterface,
+    val cryptoDao: CryptoDao,
+    va
