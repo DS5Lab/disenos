@@ -12,4 +12,6 @@ import javax.inject.Inject
 class CryptoCurrencyRepository @Inject constructor(
     val apiInterface: ApiInterface,
     val cryptoDao: CryptoDao,
-    va
+    val utils: Utils
+) {
+    fun getCryptoCurrencies(limi
