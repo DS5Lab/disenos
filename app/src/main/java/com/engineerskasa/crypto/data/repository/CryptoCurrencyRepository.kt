@@ -14,4 +14,5 @@ class CryptoCurrencyRepository @Inject constructor(
     val cryptoDao: CryptoDao,
     val utils: Utils
 ) {
-    fun getCryptoCurrencies(limi
+    fun getCryptoCurrencies(limit: Int, offset: Int): Observable<List<CryptoCurrency>> {
+  
