@@ -15,4 +15,5 @@ class CryptoCurrencyRepository @Inject constructor(
     val utils: Utils
 ) {
     fun getCryptoCurrencies(limit: Int, offset: Int): Observable<List<CryptoCurrency>> {
+        val hasConnection = utils.isConnectedToInternet()
   
