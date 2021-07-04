@@ -21,3 +21,4 @@ class CryptoCurrencyRepository @Inject constructor(
         if (hasConnection) {
             observableFromApi = getCryptoCurrenciesFromApi()
         }
+        val observableFromDB = getCryptoCurrenciesFro
