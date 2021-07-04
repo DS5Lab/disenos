@@ -17,4 +17,6 @@ class CryptoCurrencyRepository @Inject constructor(
     fun getCryptoCurrencies(limit: Int, offset: Int): Observable<List<CryptoCurrency>> {
         val hasConnection = utils.isConnectedToInternet()
         Log.e("ZSH", "getCryptoCurrencies: $hasConnection")
-        var observableFromApi: Observable<List<CryptoCurrency>>?
+        var observableFromApi: Observable<List<CryptoCurrency>>? = null
+        if (hasConnection) {
+            obse
