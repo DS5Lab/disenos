@@ -19,4 +19,5 @@ class CryptoCurrencyRepository @Inject constructor(
         Log.e("ZSH", "getCryptoCurrencies: $hasConnection")
         var observableFromApi: Observable<List<CryptoCurrency>>? = null
         if (hasConnection) {
-            obse
+            observableFromApi = getCryptoCurrenciesFromApi()
+        }
