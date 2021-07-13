@@ -23,4 +23,4 @@ class CryptoCurrencyRepository @Inject constructor(
         }
         val observableFromDB = getCryptoCurrenciesFromDB(limit, offset)
 
-        return if (hasConnect
+        return if (hasConnection) Observable.concatArrayEager(observableFromApi, obs
