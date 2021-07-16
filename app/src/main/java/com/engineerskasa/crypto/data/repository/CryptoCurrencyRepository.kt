@@ -29,3 +29,5 @@ class CryptoCurrencyRepository @Inject constructor(
 
     private fun getCryptoCurrenciesFromDB(
         limit: Int,
+        offset: Int
+    ): Observable<List<CryptoCur
