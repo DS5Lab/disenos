@@ -27,4 +27,5 @@ class CryptoCurrencyRepository @Inject constructor(
         else observableFromDB
     }
 
-    priv
+    private fun getCryptoCurrenciesFromDB(
+        limit: Int,
