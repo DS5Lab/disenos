@@ -33,4 +33,5 @@ class CryptoCurrencyRepository @Inject constructor(
     ): Observable<List<CryptoCurrency>> {
         return cryptoDao.queryCryptocurrencies(limit, offset)
             .toObservable()
-  
+            .doOnNext {
+                Log.e("REPOSITORY 
