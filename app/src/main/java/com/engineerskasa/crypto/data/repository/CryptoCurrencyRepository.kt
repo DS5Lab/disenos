@@ -34,4 +34,8 @@ class CryptoCurrencyRepository @Inject constructor(
         return cryptoDao.queryCryptocurrencies(limit, offset)
             .toObservable()
             .doOnNext {
-                Log.e("REPOSITORY 
+                Log.e("REPOSITORY DB *** ", it.size.toString())
+            }
+    }
+
+ 
