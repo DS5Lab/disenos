@@ -39,4 +39,5 @@ class CryptoCurrencyRepository @Inject constructor(
     }
 
     private fun getCryptoCurrenciesFromApi(): Observable<List<CryptoCurrency>> {
-        return apiInterf
+        return apiInterface.getCryptocurrencies(START_ZERO_VALUE)
+  
