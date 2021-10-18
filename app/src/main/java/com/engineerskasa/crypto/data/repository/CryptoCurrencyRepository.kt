@@ -43,4 +43,5 @@ class CryptoCurrencyRepository @Inject constructor(
             .doOnNext{
                 Log.e("REPOSITORY API * ", it.size.toString())
                 for (item in it) {
-          
+                    cryptoDao.insertCryptocurrency(item)
+    
