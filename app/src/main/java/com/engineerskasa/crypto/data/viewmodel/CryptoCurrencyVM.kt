@@ -25,3 +25,35 @@ class CryptoCurrencyVM @Inject constructor(
     }
     fun cryptocurrenciesError(): LiveData<String> {
         return cryptocurrenciesError
+    }
+    fun cryptocurrenciesLoader(): LiveData<Boolean> {
+        return cryptocurrenciesLoader
+    }
+
+    fun loadCryptoCurrencies(limit: Int, offset: Int ) {
+        disposableObserver = object : DisposableObserver<List<CryptoCurrency>>() {
+            override fun onNext(cryptocurrencies: List<CryptoCurrency>) {
+                cryptoCurrencyResults.postValue(cryptocurrencies)
+                cryptocurrenciesLoader.postValue(false)
+            }
+
+            override fun onError(e: Throwable) {
+                cryptocurrenciesError.postValue(e.message)
+                cryptocurrenciesLoader.postValue(false)
+            }
+
+            override fun onComplete() {
+            }
+        }
+
+        repository.getCryptoCurrencies(limit, offset)
+            .subscribeOn(Schedulers.newThread())
+            .observeOn(AndroidSchedulers.mainThread())
+            .debounce(400, TimeUnit.MILLISECONDS)
+            .subscribe(disposableObserver)
+    }
+
+    fun disposeElements(){
+        if(!disposableObserver.isDisposed) disposableObserver.dispose()
+    }
+}
