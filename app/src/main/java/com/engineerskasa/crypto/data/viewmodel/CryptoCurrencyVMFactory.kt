@@ -7,4 +7,5 @@ import javax.inject.Inject
 
 @Suppress("UNCHECKED_CAST")
 class CryptoCurrencyVMFactory @Inject constructor(private val cryptoCurrencyVM: CryptoCurrencyVM): ViewModelProvider.Factory {
-    overr
+    override fun <T : ViewModel?> create(modelClass: Class<T>): T {
+       
