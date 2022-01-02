@@ -6,4 +6,5 @@ import java.lang.IllegalArgumentException
 import javax.inject.Inject
 
 @Suppress("UNCHECKED_CAST")
-class CryptoCurrencyVMFactory @Inject constructor(private val cryptoCurrenc
+class CryptoCurrencyVMFactory @Inject constructor(private val cryptoCurrencyVM: CryptoCurrencyVM): ViewModelProvider.Factory {
+    overr
