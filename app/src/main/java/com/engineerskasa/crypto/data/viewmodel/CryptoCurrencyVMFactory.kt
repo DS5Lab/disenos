@@ -8,4 +8,5 @@ import javax.inject.Inject
 @Suppress("UNCHECKED_CAST")
 class CryptoCurrencyVMFactory @Inject constructor(private val cryptoCurrencyVM: CryptoCurrencyVM): ViewModelProvider.Factory {
     override fun <T : ViewModel?> create(modelClass: Class<T>): T {
-       
+        if (modelClass.isAssignableFrom(CryptoCurrencyVM::class.java)) {
+     
