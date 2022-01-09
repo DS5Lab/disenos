@@ -12,4 +12,5 @@ class CryptoCurrencyVMFactory @Inject constructor(private val cryptoCurrencyVM: 
             return cryptoCurrencyVM as T
         }
         throw IllegalArgumentException("Unknown class name")
- 
+    }
+}
