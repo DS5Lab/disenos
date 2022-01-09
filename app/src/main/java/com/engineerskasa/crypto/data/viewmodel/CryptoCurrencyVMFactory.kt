@@ -11,4 +11,5 @@ class CryptoCurrencyVMFactory @Inject constructor(private val cryptoCurrencyVM: 
         if (modelClass.isAssignableFrom(CryptoCurrencyVM::class.java)) {
             return cryptoCurrencyVM as T
         }
-       
+        throw IllegalArgumentException("Unknown class name")
+ 
