@@ -9,4 +9,6 @@ import javax.inject.Inject
 class CryptoCurrencyVMFactory @Inject constructor(private val cryptoCurrencyVM: CryptoCurrencyVM): ViewModelProvider.Factory {
     override fun <T : ViewModel?> create(modelClass: Class<T>): T {
         if (modelClass.isAssignableFrom(CryptoCurrencyVM::class.java)) {
-     
+            return cryptoCurrencyVM as T
+        }
+       
