@@ -42,3 +42,4 @@ class AppModule(val application: Application) {
     @Provides
     @Singleton
     fun provideUtils(): Utils = Utils(application)
+}
