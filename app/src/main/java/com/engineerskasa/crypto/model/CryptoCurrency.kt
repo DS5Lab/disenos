@@ -6,4 +6,6 @@ import com.google.gson.annotations.SerializedName
 import java.io.Serializable
 
 @Entity(tableName = "cryptocurrency")
-data class 
+data class CryptoCurrency(
+    @SerializedName("id")
+    @Primar
