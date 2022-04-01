@@ -8,4 +8,8 @@ import java.io.Serializable
 @Entity(tableName = "cryptocurrency")
 data class CryptoCurrency(
     @SerializedName("id")
-    @Primar
+    @PrimaryKey
+    val id: String,
+
+    @SerializedName("name")
+    val name: Str
