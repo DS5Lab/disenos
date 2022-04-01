@@ -12,4 +12,7 @@ data class CryptoCurrency(
     val id: String,
 
     @SerializedName("name")
-    val name: Str
+    val name: String? = null,
+
+    @SerializedName("symbol")
+    val
