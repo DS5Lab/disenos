@@ -20,4 +20,7 @@ data class CryptoCurrency(
     @SerializedName("rank")
     val rank: String? = null,
 
-    @SerializedName("price
+    @SerializedName("price_usd")
+    val priceUsd: String = "",
+
+    @SerializedName(
