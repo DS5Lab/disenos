@@ -26,4 +26,5 @@ data class CryptoCurrency(
     @SerializedName("price_btc")
     val priceBtc: String = "",
 
-    @SerializedName(
+    @SerializedName("24h_volume_usd")
+    val jsonMember24hVolumeUsd: S
