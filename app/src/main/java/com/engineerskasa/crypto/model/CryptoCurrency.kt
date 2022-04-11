@@ -36,4 +36,6 @@ data class CryptoCurrency(
     val availableSupply: String = "",
 
     @SerializedName("total_supply")
-    va
+    val totalSupply: String = "",
+
+    @SerializedName("max
