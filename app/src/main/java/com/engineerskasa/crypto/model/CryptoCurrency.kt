@@ -33,4 +33,7 @@ data class CryptoCurrency(
     val marketCapUsd: String = "",
 
     @SerializedName("available_supply")
-    val availableSupply: String = ""
+    val availableSupply: String = "",
+
+    @SerializedName("total_supply")
+    va
