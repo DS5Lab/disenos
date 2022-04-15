@@ -45,4 +45,6 @@ data class CryptoCurrency(
     val percentChange1h: String = "",
 
     @SerializedName("percent_change_24h")
-    val percentC
+    val percentChange24h: String = "",
+
+    @SerializedName("percen
