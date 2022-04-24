@@ -51,4 +51,5 @@ data class CryptoCurrency(
     val percentChange7d: String = "",
 
     @SerializedName("last_updated")
-    val lastUpdated:
+    val lastUpdated: Long = 0
+): Serializable
