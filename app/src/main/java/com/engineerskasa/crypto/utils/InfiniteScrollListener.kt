@@ -8,4 +8,7 @@ class InfiniteScrollListener( val func: () -> Unit,  val layoutManager: LinearLa
     private var loading = true
     private var visibleThreshold = 2
     private var firstVisibleItem = 0
-    private var visibleItemCount =
+    private var visibleItemCount = 0
+    private var totalItemCount = 0
+
+    override fun 
