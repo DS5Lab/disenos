@@ -16,4 +16,4 @@ class InfiniteScrollListener( val func: () -> Unit,  val layoutManager: LinearLa
         if (dy > 0) {
             visibleItemCount = recyclerView.childCount
             totalItemCount = layoutManager.itemCount
- 
+            firstVisibleItem = layoutManager.fin
