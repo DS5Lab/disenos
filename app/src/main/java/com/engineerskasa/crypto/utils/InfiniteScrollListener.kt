@@ -19,4 +19,5 @@ class InfiniteScrollListener( val func: () -> Unit,  val layoutManager: LinearLa
             firstVisibleItem = layoutManager.findFirstVisibleItemPosition()
 
             if (loading) {
-     
+                if (totalItemCount > previousTotal) {
+            
