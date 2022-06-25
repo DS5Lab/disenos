@@ -21,4 +21,7 @@ class InfiniteScrollListener( val func: () -> Unit,  val layoutManager: LinearLa
             if (loading) {
                 if (totalItemCount > previousTotal) {
                     loading = false
-                    previousTota
+                    previousTotal = totalItemCount
+                }
+            }
+        
