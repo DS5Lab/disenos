@@ -24,4 +24,4 @@ class InfiniteScrollListener( val func: () -> Unit,  val layoutManager: LinearLa
                     previousTotal = totalItemCount
                 }
             }
-            if (!loading && (totalItemCount - visib
+            if (!loading && (totalItemCount - visibleItemCount) <= (firstVisibleItem + visibleThreshold)) 
