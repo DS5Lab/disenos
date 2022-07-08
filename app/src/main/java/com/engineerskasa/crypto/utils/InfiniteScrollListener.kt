@@ -27,4 +27,5 @@ class InfiniteScrollListener( val func: () -> Unit,  val layoutManager: LinearLa
             if (!loading && (totalItemCount - visibleItemCount) <= (firstVisibleItem + visibleThreshold)) {
                 // End has been reached
                 func()
- 
+                loading = true
+            }
