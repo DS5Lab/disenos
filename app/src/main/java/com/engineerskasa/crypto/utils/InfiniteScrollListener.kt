@@ -29,3 +29,6 @@ class InfiniteScrollListener( val func: () -> Unit,  val layoutManager: LinearLa
                 func()
                 loading = true
             }
+        }
+    }
+}
