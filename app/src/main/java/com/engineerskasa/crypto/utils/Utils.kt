@@ -5,4 +5,7 @@ import android.net.ConnectivityManager
 import android.net.NetworkCapabilities
 import javax.inject.Inject
 
-class Utils @Inject constructor(private v
+class Utils @Inject constructor(private val context: Context) {
+
+    fun isConnectedToInternet() =
+ 
