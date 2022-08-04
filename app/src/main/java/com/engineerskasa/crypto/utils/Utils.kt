@@ -8,4 +8,6 @@ import javax.inject.Inject
 class Utils @Inject constructor(private val context: Context) {
 
     fun isConnectedToInternet() =
-        (context.getSystemService(Context.CONNECTIVITY_SE
+        (context.getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager)
+            .run {
+                getNetwo
