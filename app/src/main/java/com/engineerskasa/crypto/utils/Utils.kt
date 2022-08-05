@@ -11,4 +11,5 @@ class Utils @Inject constructor(private val context: Context) {
         (context.getSystemService(Context.CONNECTIVITY_SERVICE) as ConnectivityManager)
             .run {
                 getNetworkCapabilities(activeNetwork)?.run {
-                    hasTranspo
+                    hasTransport(NetworkCapabilities.TRANSPORT_CELLULAR)
+                            
