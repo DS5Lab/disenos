@@ -12,4 +12,4 @@ class Utils @Inject constructor(private val context: Context) {
             .run {
                 getNetworkCapabilities(activeNetwork)?.run {
                     hasTransport(NetworkCapabilities.TRANSPORT_CELLULAR)
-                            
+                            || hasTransport(NetworkCapabilities.TRANSP
