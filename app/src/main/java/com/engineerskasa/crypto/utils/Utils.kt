@@ -13,4 +13,5 @@ class Utils @Inject constructor(private val context: Context) {
                 getNetworkCapabilities(activeNetwork)?.run {
                     hasTransport(NetworkCapabilities.TRANSPORT_CELLULAR)
                             || hasTransport(NetworkCapabilities.TRANSPORT_WIFI)
-                            || hasTransport(
+                            || hasTransport(NetworkCapabilities.TRANSPORT_ETHERNET)
+             
