@@ -14,4 +14,6 @@ class Utils @Inject constructor(private val context: Context) {
                     hasTransport(NetworkCapabilities.TRANSPORT_CELLULAR)
                             || hasTransport(NetworkCapabilities.TRANSPORT_WIFI)
                             || hasTransport(NetworkCapabilities.TRANSPORT_ETHERNET)
-             
+                }?: false
+            }
+}
