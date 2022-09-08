@@ -13,4 +13,5 @@
                 android:startY="49.59793"
                 android:type="linear">
                 <item
-                    and
+                    android:color="#44000000"
+                    android:offset="0.0" 
