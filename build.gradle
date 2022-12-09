@@ -6,4 +6,5 @@ buildscript {
         mavenCentral()
     }
     dependencies {
-        class
+        classpath "com.android.tools.build:gradle:4.2.1"
+        classpath 
