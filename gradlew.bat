@@ -37,4 +37,5 @@ set JAVA_EXE=%JAVA_HOME%/bin/java.exe
 
 if exist "%JAVA_EXE%" goto init
 
-ec
+echo.
+echo ERROR: JAVA_HOME is set to an invalid directory: %J
