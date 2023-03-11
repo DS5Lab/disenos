@@ -55,4 +55,7 @@ if not "%OS%" == "Windows_NT" goto win9xME_args
 set CMD_LINE_ARGS=
 set _SKIP=2
 
-:win9xME_a
+:win9xME_args_slurp
+if "x%~1" == "x" goto execute
+
+set CMD_LINE_ARG
